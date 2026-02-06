@@ -1507,18 +1507,12 @@
           "System.IdentityModel.Tokens.Jwt": "8.15.0"
         },
         "runtime": {
-          "AuthServiceIN6BM.Application.dll": {
-            "assemblyVersion": "1.0.0",
-            "fileVersion": "1.0.0.0"
-          }
+          "AuthServiceIN6BM.Application.dll": {}
         }
       },
       "AuthServiceIN6BM.Domain/1.0.0": {
         "runtime": {
-          "AuthServiceIN6BM.Domain.dll": {
-            "assemblyVersion": "1.0.0",
-            "fileVersion": "1.0.0.0"
-          }
+          "AuthServiceIN6BM.Domain.dll": {}
         }
       },
       "AuthServiceIN6BM.Persistence/1.0.0": {
@@ -1529,10 +1523,7 @@
           "Npgsql.EntityFrameworkCore.PostgreSQL": "9.0.4"
         },
         "runtime": {
-          "AuthServiceIN6BM.Persistence.dll": {
-            "assemblyVersion": "1.0.0",
-            "fileVersion": "1.0.0.0"
-          }
+          "AuthServiceIN6BM.Persistence.dll": {}
         }
       }
     }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "4cUpsTY4txk=",
+  "dgSpecHash": "J6AvXXwSIklCqt+uDMCd5l9OrgKd/oluboyTmy+a6bs6MO+iroVH1fj2WcYvzN8J3fUBdN7N1yt9pKKEl/PMTw==",
   "success": true,
-  "projectFilePath": "C:\\Proyectos 2026\\AuthServiceIN6BM\\src\\AuthServiceIN6BM.Domain\\AuthServiceIN6BM.Domain.csproj",
+  "projectFilePath": "C:\\AuthServiceIN6BM-2021545\\AuthServiceIN6BM\\src\\AuthServiceIN6BM.Domain\\AuthServiceIN6BM.Domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
