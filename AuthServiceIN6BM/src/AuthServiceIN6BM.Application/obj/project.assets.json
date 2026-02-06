@@ -317,11 +317,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\HP\\Desktop\\AuthServiceIN6M-2021159-main\\AuthServiceIN6BM\\src\\AuthServiceIN6BM.Application\\AuthServiceIN6BM.Application.csproj",
+      "projectUniqueName": "C:\\AuthServiceIN6BM-2021545\\AuthServiceIN6BM\\src\\AuthServiceIN6BM.Application\\AuthServiceIN6BM.Application.csproj",
       "projectName": "AuthServiceIN6BM.Application",
-      "projectPath": "C:\\Users\\HP\\Desktop\\AuthServiceIN6M-2021159-main\\AuthServiceIN6BM\\src\\AuthServiceIN6BM.Application\\AuthServiceIN6BM.Application.csproj",
+      "projectPath": "C:\\AuthServiceIN6BM-2021545\\AuthServiceIN6BM\\src\\AuthServiceIN6BM.Application\\AuthServiceIN6BM.Application.csproj",
       "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\HP\\Desktop\\AuthServiceIN6M-2021159-main\\AuthServiceIN6BM\\src\\AuthServiceIN6BM.Application\\obj\\",
+      "outputPath": "C:\\AuthServiceIN6BM-2021545\\AuthServiceIN6BM\\src\\AuthServiceIN6BM.Application\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -336,8 +336,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\HP\\Desktop\\AuthServiceIN6M-2021159-main\\AuthServiceIN6BM\\src\\AuthServiceIN6BM.Domain\\AuthServiceIN6BM.Domain.csproj": {
-              "projectPath": "C:\\Users\\HP\\Desktop\\AuthServiceIN6M-2021159-main\\AuthServiceIN6BM\\src\\AuthServiceIN6BM.Domain\\AuthServiceIN6BM.Domain.csproj"
+            "C:\\AuthServiceIN6BM-2021545\\AuthServiceIN6BM\\src\\AuthServiceIN6BM.Domain\\AuthServiceIN6BM.Domain.csproj": {
+              "projectPath": "C:\\AuthServiceIN6BM-2021545\\AuthServiceIN6BM\\src\\AuthServiceIN6BM.Domain\\AuthServiceIN6BM.Domain.csproj"
             }
           }
         }

@@ -2,27 +2,27 @@ using AuthServiceIN6BM.Persistence.Data;
 using AuthServiceIN6BM.Api.Extensions;
 using AuthServiceIN6BM.Api.ModelBinders;
 using Serilog;
-using Microsoft.AspnNetCore.Hosting.Server;
+using Microsoft.AspNetCore.Hosting.Server;
 using Microsoft.AspNetCore.Hosting.Server.Features;
 using System.Runtime.Serialization;
 using System.Security.Cryptography.X509Certificates;
 
 var builder = WebApplication.CreateBuilder(args);
 
-builder.host.UserSerilog((Context, services, loggerConfiguration) =>
+builder.Host.UseSerilog((Context, services, loggerConfiguration) =>
     loggerConfiguration
         .ReadFrom.Configuration(Context.Configuration)
         .ReadFrom.Services(services));
 builder.Services.AddControllers(options =>
 {
-    options.ModelBinderProvider.Insert(0, new FileDataModelBinderProvider());
+    options.ModelBinderProviders.Insert(0, new FileDataModelBinderProvider());
 })
 .AddJsonOptions(o =>
 {
-    object.JsonSerializerOptions.PropertyNamingPolicy = System.Text.Json.JsonNamingPolicy.CamelCase;
+    o.JsonSerializerOptions.PropertyNamingPolicy = System.Text.Json.JsonNamingPolicy.CamelCase;
 });
 
-builder.Services.AddApplicationServices(builder.configuration);
+builder.Services.AddApplicationService(builder.Configuration);
 
 var app = builder.Build();
 
@@ -64,7 +64,7 @@ app.UseSecurityHeaders(policies => policies
 // Global exception handling
 
 // Core middLewares
-app.UseHttpsRendirection();
+app.UseHttpsRedirection();
 app.UseCors("DefaultCorsPolicy");
 app.UseRateLimiter();
 app.UseAuthentication();
@@ -72,16 +72,16 @@ app.UseAuthorization();
 
 app.MapControllers();
 
-app.MapHelthChecks("/health");
+app.MapHealthChecks("/health");
 
 app.MapGet("/health", () =>
 {
     var response = new
     {
         status = "Healthy",
-        timestamps = DateTime.UtcNow.ToString("yyyy-MM-ddTHH:mm:ss.fff2")
+        timestamps = DateTime.UtcNow.ToString("yyyy-MM-ddTHH:mm:ss.fff")
     };
-    return Results.ok(response);
+    return Results.Ok(response);
 });
 
 // Startup log: addresses and health endpoint

@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = AuthServiceIN6BM.Domain
-build_property.ProjectDir = C:\Users\HP\Desktop\AuthServiceIN6M-2021159-main\AuthServiceIN6BM\src\AuthServiceIN6BM.Domain\
+build_property.ProjectDir = C:\AuthServiceIN6BM-2021545\AuthServiceIN6BM\src\AuthServiceIN6BM.Domain\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

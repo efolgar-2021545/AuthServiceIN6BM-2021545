@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "qGEOP/rjSrA=",
+  "dgSpecHash": "dx3jQcmQnoY=",
   "success": true,
-  "projectFilePath": "C:\\Users\\HP\\Desktop\\AuthServiceIN6M-2021159-main\\AuthServiceIN6BM\\src\\AuthServiceIN6BM.Application\\AuthServiceIN6BM.Application.csproj",
+  "projectFilePath": "C:\\AuthServiceIN6BM-2021545\\AuthServiceIN6BM\\src\\AuthServiceIN6BM.Application\\AuthServiceIN6BM.Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\HP\\.nuget\\packages\\konscious.security.cryptography.argon2\\1.3.1\\konscious.security.cryptography.argon2.1.3.1.nupkg.sha512",
     "C:\\Users\\HP\\.nuget\\packages\\konscious.security.cryptography.blake2\\1.1.1\\konscious.security.cryptography.blake2.1.1.1.nupkg.sha512",

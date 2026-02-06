@@ -7,9 +7,9 @@ namespace AuthServiceIN6BM.Api.ModelBinders;
 
 public class FileDataModelBinder : IModelBinder
 {
-    public Task BindModelAsyn(ModelBindingContext bindingContext)
+    public Task BindModelAsync(ModelBindingContext bindingContext)
     {
-        ArgumentNullException.ThrowIfNull(brindingContext);
+        ArgumentNullException.ThrowIfNull(bindingContext);
 
         if (!typeof(IFileData).IsAssignableFrom(bindingContext.ModelType))
         {
