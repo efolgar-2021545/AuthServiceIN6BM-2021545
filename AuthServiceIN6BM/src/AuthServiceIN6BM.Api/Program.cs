@@ -1,18 +1,18 @@
+
 using AuthServiceIN6BM.Persistence.Data;
 using AuthServiceIN6BM.Api.Extensions;
 using AuthServiceIN6BM.Api.ModelBinders;
 using Serilog;
 using Microsoft.AspNetCore.Hosting.Server;
 using Microsoft.AspNetCore.Hosting.Server.Features;
-using System.Runtime.Serialization;
-using System.Security.Cryptography.X509Certificates;
 
 var builder = WebApplication.CreateBuilder(args);
 
-builder.Host.UseSerilog((Context, services, loggerConfiguration) =>
+builder.Host.UseSerilog((context, services, loggerConfiguration) =>
     loggerConfiguration
-        .ReadFrom.Configuration(Context.Configuration)
+        .ReadFrom.Configuration(context.Configuration)
         .ReadFrom.Services(services));
+
 builder.Services.AddControllers(options =>
 {
     options.ModelBinderProviders.Insert(0, new FileDataModelBinderProvider());
@@ -22,7 +22,7 @@ builder.Services.AddControllers(options =>
     o.JsonSerializerOptions.PropertyNamingPolicy = System.Text.Json.JsonNamingPolicy.CamelCase;
 });
 
-builder.Services.AddApplicationService(builder.Configuration);
+builder.Services.AddApplicationServices(builder.Configuration);
 
 var app = builder.Build();
 
@@ -60,15 +60,14 @@ app.UseSecurityHeaders(policies => policies
     .AddCustomHeader("Cache-Control", "no-store, no-cache, must-revalidate, private")
 );
 
-
 // Global exception handling
 
-// Core middLewares
+// Core middlewares
 app.UseHttpsRedirection();
 app.UseCors("DefaultCorsPolicy");
-app.UseRateLimiter();
-app.UseAuthentication();
-app.UseAuthorization();
+//app.UseRateLimiter();
+//app.UseAuthentication();
+//app.UseAuthorization();
 
 app.MapControllers();
 
@@ -79,7 +78,7 @@ app.MapGet("/health", () =>
     var response = new
     {
         status = "Healthy",
-        timestamps = DateTime.UtcNow.ToString("yyyy-MM-ddTHH:mm:ss.fff")
+        timestamps = DateTime.UtcNow.ToString("yyyy-MM-ddTHH:mm:ss.fffZ")
     };
     return Results.Ok(response);
 });
@@ -139,3 +138,4 @@ using (var scope = app.Services.CreateScope())
 }
 
 app.Run();
+

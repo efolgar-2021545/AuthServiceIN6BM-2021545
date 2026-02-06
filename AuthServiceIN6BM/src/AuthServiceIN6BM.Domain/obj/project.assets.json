@@ -8,19 +8,19 @@
     "net8.0": []
   },
   "packageFolders": {
-    "C:\\Users\\HP\\.nuget\\packages\\": {}
+    "C:\\Users\\ersan\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\AuthServiceIN6BM-2021545\\AuthServiceIN6BM\\src\\AuthServiceIN6BM.Domain\\AuthServiceIN6BM.Domain.csproj",
+      "projectUniqueName": "C:\\Proyectos 2026\\AuthServiceIN6BM\\src\\AuthServiceIN6BM.Domain\\AuthServiceIN6BM.Domain.csproj",
       "projectName": "AuthServiceIN6BM.Domain",
-      "projectPath": "C:\\AuthServiceIN6BM-2021545\\AuthServiceIN6BM\\src\\AuthServiceIN6BM.Domain\\AuthServiceIN6BM.Domain.csproj",
-      "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-      "outputPath": "C:\\AuthServiceIN6BM-2021545\\AuthServiceIN6BM\\src\\AuthServiceIN6BM.Domain\\obj\\",
+      "projectPath": "C:\\Proyectos 2026\\AuthServiceIN6BM\\src\\AuthServiceIN6BM.Domain\\AuthServiceIN6BM.Domain.csproj",
+      "packagesPath": "C:\\Users\\ersan\\.nuget\\packages\\",
+      "outputPath": "C:\\Proyectos 2026\\AuthServiceIN6BM\\src\\AuthServiceIN6BM.Domain\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\ersan\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -64,7 +64,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.417/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.416/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

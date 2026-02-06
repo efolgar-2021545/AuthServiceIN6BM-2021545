@@ -312,19 +312,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\HP\\.nuget\\packages\\": {}
+    "C:\\Users\\ersan\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\AuthServiceIN6BM-2021545\\AuthServiceIN6BM\\src\\AuthServiceIN6BM.Application\\AuthServiceIN6BM.Application.csproj",
+      "projectUniqueName": "C:\\Proyectos 2026\\AuthServiceIN6BM\\src\\AuthServiceIN6BM.Application\\AuthServiceIN6BM.Application.csproj",
       "projectName": "AuthServiceIN6BM.Application",
-      "projectPath": "C:\\AuthServiceIN6BM-2021545\\AuthServiceIN6BM\\src\\AuthServiceIN6BM.Application\\AuthServiceIN6BM.Application.csproj",
-      "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-      "outputPath": "C:\\AuthServiceIN6BM-2021545\\AuthServiceIN6BM\\src\\AuthServiceIN6BM.Application\\obj\\",
+      "projectPath": "C:\\Proyectos 2026\\AuthServiceIN6BM\\src\\AuthServiceIN6BM.Application\\AuthServiceIN6BM.Application.csproj",
+      "packagesPath": "C:\\Users\\ersan\\.nuget\\packages\\",
+      "outputPath": "C:\\Proyectos 2026\\AuthServiceIN6BM\\src\\AuthServiceIN6BM.Application\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\ersan\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -336,8 +336,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\AuthServiceIN6BM-2021545\\AuthServiceIN6BM\\src\\AuthServiceIN6BM.Domain\\AuthServiceIN6BM.Domain.csproj": {
-              "projectPath": "C:\\AuthServiceIN6BM-2021545\\AuthServiceIN6BM\\src\\AuthServiceIN6BM.Domain\\AuthServiceIN6BM.Domain.csproj"
+            "C:\\Proyectos 2026\\AuthServiceIN6BM\\src\\AuthServiceIN6BM.Domain\\AuthServiceIN6BM.Domain.csproj": {
+              "projectPath": "C:\\Proyectos 2026\\AuthServiceIN6BM\\src\\AuthServiceIN6BM.Domain\\AuthServiceIN6BM.Domain.csproj"
             }
           }
         }
@@ -382,7 +382,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.417/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.416/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

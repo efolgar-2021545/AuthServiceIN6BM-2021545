@@ -1,4 +1,5 @@
 using AuthServiceIN6BM.Application.Interfaces;
+using AuthServiceIN6BM.Application.Services;
 using AuthServiceIN6BM.Domain.Interfaces;
 using AuthServiceIN6BM.Persistence.Data;
 using AuthServiceIN6BM.Persistence.Repositories;
@@ -8,25 +9,25 @@ namespace AuthServiceIN6BM.Api.Extensions;
 
 public static class ServiceCollectionExtensions
 {
-    public static IServiceCollection AddApplicationService(this IServiceCollection services, IConfiguration configuration)
+    public static IServiceCollection AddApplicationServices(this IServiceCollection services, IConfiguration configuration)
     {
-        services.AddDbContext<ApplicationDbContext>(options =>
+        services.AddDbContext<ApplicationDbContext>(options => 
             options.UseNpgsql(configuration.GetConnectionString("DefaultConnection"))
                 .UseSnakeCaseNamingConvention());
         
         services.AddScoped<IUserRepository, UserRepository>();
         services.AddScoped<IRoleRepository, RoleRepository>();
-        
+
         services.AddHealthChecks();
 
         return services;
-    
+
     }
 
     public static IServiceCollection AddApiDocumentation(this IServiceCollection services)
     {
         services.AddEndpointsApiExplorer();
-        services:AddSwaggerGen();
+        services.AddSwaggerGen();
 
         return services;
     }

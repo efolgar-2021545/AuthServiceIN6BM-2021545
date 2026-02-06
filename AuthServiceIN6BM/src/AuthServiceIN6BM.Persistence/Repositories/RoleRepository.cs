@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace AuthServiceIN6BM.Persistence.Repositories;
 
-public class RoleRepository(ApplicationDbContext context) : IRoleRespository
+public class RoleRepository(ApplicationDbContext context) : IRoleRepository
 {
     public async Task<Role?> GetByNameAsync(string roleName)
     {
@@ -34,7 +34,7 @@ public class RoleRepository(ApplicationDbContext context) : IRoleRespository
         return users;
     }
 
-    public async Task<IReadOnlyList<string>> GetUserRoleNameAsync(string userId)
+    public async Task<IReadOnlyList<string>> GetUserRoleNamesAsync(string userId)
     {
         var roles = await context.UserRoles
             .Include(ur => ur.Role)
